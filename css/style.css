@@ -1,0 +1,299 @@
+#logo {
+    width: 145px;
+    height: 100%;
+}
+
+#bodyCustom {
+    background-color: rgb(236, 236, 236);
+}
+
+#navbarCustom {
+    background: linear-gradient(180deg, rgba(66, 66, 66, 1) 0%, rgba(156, 156, 156, 1) 40%, rgba(208, 208, 208, 1) 64%, rgba(226, 226, 226, 1) 78%, rgba(236, 236, 236, 0.9416141456582633) 95%);
+
+}
+
+.rowHeading {
+    height: 90%;
+}
+
+#wallpaperCoding {
+    width: 80%;
+    height: 40%;
+    object-fit: cover;
+}
+
+#footer {
+    background: linear-gradient(0deg, rgba(66, 66, 66, 1) 0%, rgba(156, 156, 156, 1) 40%, rgba(208, 208, 208, 1) 64%, rgba(226, 226, 226, 1) 78%, rgba(236, 236, 236, 0.9416141456582633) 95%);
+
+}
+
+.linkCustom {
+    color: #000000 !important;
+    font-size: larger;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.name {
+    font-family: "WindSong", cursive;
+    font-weight: 500;
+    color: rgb(61, 98, 141);
+}
+
+#frontend {
+    font-family: "WindSong", cursive;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 70px;
+    background: -webkit-linear-gradient(45deg, #424242 0%, rgba(113, 128, 150, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#backend {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    background: -webkit-linear-gradient(45deg, rgba(66, 66, 66, 1) 0%, rgba(113, 128, 150, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#arrow {
+    font-size: 50px;
+    color: #000000;
+}
+
+.carousel-item > img{
+    min-height: 518px !important;
+
+    max-height: 518px !important;
+
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: none !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    padding: 1rem 0.5rem;
+}
+
+.project {
+    font-family: "Comfortaa", sans-serif;
+    position: relative;
+    max-width: 85rem;
+    height: 30vh;
+    padding: 4vh 28px;
+    color: #282828;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.projectCaption {
+    position: absolute;
+    display: inline-block;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s 0.1s ease-in-out;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0;
+}
+
+#projectImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+}
+
+.project::before {
+    content: "";
+    position: absolute;
+    background-color: #424242;
+    transition: inherit;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: inherit;
+}
+
+.project:hover {
+    transform: translateY(-0.2rem);
+    cursor: pointer;
+}
+
+.project:hover .projectCaption {
+    opacity: 1;
+}
+
+.project:hover::before {
+    opacity: 0.6;
+}
+
+.workModal {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.workModal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.workModal:target .workContainer {
+    transform: scale(0.8);
+}
+
+.workContainer {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 135rem;
+    padding: 2.8rem;
+    background-color: #fff;
+    transition: all 0.5s 0.2s;
+    transform: scale(0.25);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.8rem;
+}
+
+.workInfo {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    flex-grow: 1;
+    align-self: flex-start;
+    margin: 8rem 0;
+}
+
+.close,
+.close:link,
+.close:visited {
+    display: inline-block;
+    text-align: start;
+    position: absolute;
+    top: 0;
+    right: 1.8rem;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 0.8rem;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.close:hover,
+.close:link:hover,
+.close:visited:hover {
+    color: #424242;
+}
+
+.headerModal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.header-headingsModals {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.1rem;
+}
+
+.header-infoModal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.85rem;
+    padding-right: 2rem;
+}
+
+.header-infoModal>* {
+    font-weight: 300;
+}
+
+.header-infoModal>*:not(:last-child) {
+    margin-bottom: 0.3rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.short-infoModal {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.long-infoModal {
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    margin-bottom: 2rem;
+}
+
+.showScreen {
+    position: relative;
+    flex-basis: 40%;
+    margin: 0 auto;
+}
+
+.showScreen-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.showScreen-btn {
+    flex-shrink: 0;
+}
+
+.imageWorkContainer {
+    position: relative;
+    max-height: 100%;
+}
+
+.imageWork {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
