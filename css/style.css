@@ -414,12 +414,10 @@ body, html {
 
 .scroll-arrow {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 2rem;
-    z-index: 1000;
-    cursor: pointer;
-    display: block;
+    bottom: 20px; /* distanza dal fondo */
+    right: 20px;  /* distanza dal bordo destro */
+    z-index: 1000; /* sopra tutto */
+    display: block; /* controlla visibilità via JS */
     color: #000;
 }
 /* ------------------------------------------------------
